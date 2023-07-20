@@ -1,9 +1,11 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
 // const router=express.Router()   
 const bodyParser = require('body-parser')
 const dotenv = require('dotenv')
 dotenv.config()
+app.use(cors())
 require('./connection/mongoose.connection')
 app.use(bodyParser.urlencoded({extended: true}))
 let port = process.env.PORT
