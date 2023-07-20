@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>S/N</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>
+                <form action="/delete" method="post">
+                    <input type="text" name="anotherEmail" value=""> 
+                <button type="submit">Delete</button>
+            </form>
+            <form action="/edit" method="post">
+                <input type="text" name="anotherEmail" value=""> 
+            <button type="submit">Edit</button>
+        </form>
+            </th>
+        </tr>
+    </table>
+</body>
+</html>
